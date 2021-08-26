@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { GiSofa } from 'react-icons/gi'
-import '../components/Navbar.css'
+import '../Navbar/Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 
 
