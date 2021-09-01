@@ -2,6 +2,8 @@
     height: 15vh;
     display:flex;
     align-items: center;
+    position:fixed;
+    width: 100%;
 }
 .header-container {
     width: 90%;
@@ -21,10 +23,12 @@
 .logo-title {
     display: flex;
     align-self: center;
+    color: #DAE1E7
 }
 
 .yellow {
-    color: #716F81
+    color: #BD4B4B;
+    font-weight:bolder
 }
 
 .logo_container .logo {
@@ -33,21 +37,26 @@
     color:#BD4B4B;
     
 }
+
+.menu-burger {
+    color:#BD4B4B;
+}
 .navbar-container {
+    display:flex;
     width: 70%;
-    position:absolute;
+    position:fixed;
     background-color: #0e1111;
     left:0;
     height: 100vh;
     bottom:0.5px;
     z-index: 1000;
-    
 }
 .nav-menu {
     width: 100%;
     display: flex;
     list-style: none;
-    color:white;
+    align-self: center;
+    color:#DAE1E7;
     flex-direction: column;
     font-size:1em;
 }
@@ -56,6 +65,18 @@
     display: flex;
     justify-content: center;
     margin: 1.5rem;
+    color: #DAE1E7;
+
+    
+}
+.nav-menu li a {
+    text-decoration: none;
+    color:#DAE1E7 ;
+}
+
+
+.nav-menu li a:hover {
+    color:#BD4B4B;
 }
 
 .menu-burger {
@@ -71,4 +92,23 @@
 .d-flex {
   transform: translateX(0);
   transition: 1s;
+}
+
+@media screen and (min-width: 1250px){
+    .navbar-container {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px){
+    .logo-title {
+        font-size:2.5em;
+    }
+
+    .nav-menu {
+        font-size: 1.8em;
+    }
+
+
+
 }

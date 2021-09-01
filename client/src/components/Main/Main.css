@@ -1,0 +1,21 @@
+.main {
+    height: 100vh;
+    background-color: #0e1111;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main h1 {
+    display: flex;
+    color:#DAE1E7;
+    width: 85%;
+    text-align:center;
+    margin: 0 auto;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -6,11 +6,16 @@
     box-sizing: border-box;
     height: auto;
     font-family: 'Roboto', sans-serif;
+   scroll-behavior: smooth;
     
 }
 
 html {
-    height: 100vh;
+   
+    scroll-behavior: smooth;
   
 }
 
+.app {
+    scroll-behavior: smooth;
+}

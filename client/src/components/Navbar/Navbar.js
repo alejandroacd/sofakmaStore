@@ -3,7 +3,6 @@ import { GiSofa } from 'react-icons/gi'
 import '../Navbar/Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 
-
 const Navbar = () => {
     
     const [toggle,setToggle] = useState(false)
@@ -12,17 +11,21 @@ const Navbar = () => {
         console.log(toggle)
     }
 
+    const redirect = () => {
+        window.location = "/"
+    }
+
     return (
         <div className="navbar_container">
             <header className="header-container">
-                <div className='logo_container'>
+                <div className='logo_container' onClick={redirect}>
                     <GiSofa size={30} className="logo"/>
                     <h1 className="logo-title">sofakma<p className="yellow">store</p></h1>
                 </div>
 
                 <div className={toggle ? "navbar-container d-flex" : "navbar-container d-none"}>
                 <ul className="nav-menu">
-                    <li> Catálogo </li>
+                    <li> <a href="#main" onClick={changeState}>Catálogo</a></li>
                     <li> Carrito </li>
                     <li> FAQ </li>
 
@@ -30,7 +33,7 @@ const Navbar = () => {
                 </div>
               
 
-                <FiMenu className='menu-burger' size={25} onClick={changeState} />
+                <FiMenu className='menu-burger' size={35} onClick={changeState} />
             </header>
 
         </div>

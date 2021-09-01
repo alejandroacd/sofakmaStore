@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.landing__container {
+    width: 100%;
+    height: 100vh;
+    background: url('./foto1.jpg') no-repeat 30% 50%;
+    background-size: cover;
+    display: flex;
+}
+
+.landing__container h1 {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    align-self: center;
+    color:#DAE1E7;
+    font-size: 3.5rem;
+    text-align: center;
+    
+    
+}
+
+
+
+@media (min-width: 992px){
+    .landing__container {
+        background: url('./foto1.jpg') no-repeat 100% 100%;
+        background-size: cover;
+    }
+
+
+    }
+
