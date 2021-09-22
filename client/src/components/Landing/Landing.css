@@ -6,20 +6,76 @@
     background: url('./foto1.jpg') no-repeat 30% 50%;
     background-size: cover;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    opacity: 0.5;
+    position: relative;
 }
 
-.landing__container h1 {
+.routes {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
     display: flex;
     justify-content: center;
-    width: 75%;
-    margin: 0 auto;
-    align-self: center;
-    color:#DAE1E7;
-    font-size: 3.5rem;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.routes h1 {
+    width: 90%;
+    margin:0 auto;
     text-align: center;
-    
+    font-size:  3rem;
+    color:#DAE1E7;
+    position: relative;
+    top:3rem;
     
 }
+
+.link_routes {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top:5rem;
+    
+}
+
+
+
+.link_routes a {
+    margin:3px;
+    width:70%;
+    display: flex;
+    padding:0.7em;
+    align-self: center;
+    justify-content: center;
+    background-color:#0e1111;
+    color:#DAE1E7;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.link_routes a:hover {
+    transition:0.4s;
+    background-color: #BF4D4C;
+}
+
+.link_routes a:visited, a:link {
+    text-decoration:none;
+}
+
+.instagram {
+ margin-left: 10px;    
+ color: #BF4D4C;
+}
+
+
+
+
 
 
 
@@ -27,6 +83,11 @@
     .landing__container {
         background: url('./foto1.jpg') no-repeat 100% 100%;
         background-size: cover;
+    }
+
+    .link_routes a {
+        width: 45%;
+        font-size:1.3em
     }
 
 

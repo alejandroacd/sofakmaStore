@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
+    height: auto;
     background-color: #0e1111;
     
 }
@@ -8,13 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
-.main h1 {
+
+.main .main_title{
     display: flex;
     color:#DAE1E7;
-    width: 85%;
     text-align:center;
-    margin: 0 auto;
-    height: 20rem;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
     justify-content: center;
     align-items: center;
 

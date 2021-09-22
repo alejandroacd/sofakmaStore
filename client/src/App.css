@@ -7,15 +7,16 @@
     height: auto;
     font-family: 'Roboto', sans-serif;
    scroll-behavior: smooth;
+    ;
     
 }
 
 html {
-   
+   background:#0e1111;
     scroll-behavior: smooth;
   
 }
-
 .app {
     scroll-behavior: smooth;
 }
+

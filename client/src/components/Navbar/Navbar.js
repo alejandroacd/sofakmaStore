@@ -4,16 +4,17 @@ import '../Navbar/Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 
 const Navbar = () => {
-    
+    console.log(document.getElementById('main'))
     const [toggle,setToggle] = useState(false)
     const changeState = () => {
         setToggle(!toggle)
         console.log(toggle)
     }
-
     const redirect = () => {
         window.location = "/"
     }
+
+    const main = document.getElementById('main');
 
     return (
         <div className="navbar_container">
@@ -25,7 +26,7 @@ const Navbar = () => {
 
                 <div className={toggle ? "navbar-container d-flex" : "navbar-container d-none"}>
                 <ul className="nav-menu">
-                    <li> <a href="#main" onClick={changeState}>Catálogo</a></li>
+                    <li> <a href={document.getElementById('main') ? '#main' : '/'} onClick={changeState}>Catálogo</a></li>
                     <li> Carrito </li>
                     <li> FAQ </li>
 

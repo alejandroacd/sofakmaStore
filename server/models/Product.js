@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
  const productSchema = new mongoose.Schema({
+ 
      name: {
          type: String,
          required: true
@@ -13,6 +14,10 @@ const mongoose = require('mongoose')
          type: Number,
          required: true
      },
+     imgUrl: {
+        type: String,
+        required: false
+    },
      countInStock: {
          type: Number,
          required: true

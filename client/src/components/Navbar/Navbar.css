@@ -1,9 +1,11 @@
 .navbar_container {
-    height: 15vh;
+    height: 11vh;
     display:flex;
     align-items: center;
     position:fixed;
     width: 100%;
+    background-color: #0e1111;
+    z-index: 1000;
 }
 .header-container {
     width: 90%;
@@ -12,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    
 }
 .logo_container {
     display:flex;
@@ -97,10 +100,15 @@
 @media screen and (min-width: 1250px){
     .navbar-container {
         width: 45%;
+        
     }
 }
 
 @media (min-width: 992px){
+    .navbar_container {
+       
+        z-index:1000;
+    }
     .logo-title {
         font-size:2.5em;
     }
@@ -108,7 +116,5 @@
     .nav-menu {
         font-size: 1.8em;
     }
-
-
 
 }
