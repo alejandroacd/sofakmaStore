@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
 
 app.use('/api/products', productsRoutes)
 
-app.listen(process.env.PORT|| LocalPort , () => {
+app.listen(process.env.PORT || LocalPort , () => {
     console.log('Server on port 3001')
 })

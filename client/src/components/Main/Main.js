@@ -18,11 +18,11 @@ const [datax,setData] = useState([])
     return (
         <div className='main'  id="main">
 
-            <h1 className="main_title"> Catalogue </h1>
+            <h1 className="main_title" > Catalogo </h1>
         
         {datax.map((x,y) => {
            return ( 
-             <Product to={`/products/${x._id}`} key={x._id} name={x.name} image={x.imgUrl}  description={x.description} price={x.price} /> 
+             <Product id={`${x._id}`} to={`/products/${x._id}`} key={x._id} name={x.name} image={x.imgUrl}  description={x.description} price={x.price} /> 
            
            )
         })}

@@ -4,7 +4,8 @@ import Landing from '../Landing/Landing'
 import Main from '../Main/Main'
 
 
-const Home = () => {
+const Home = (props) => {
+    console.log(props)
     return (
         <>
         <Navbar />

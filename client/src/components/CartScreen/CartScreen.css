@@ -1,0 +1,129 @@
+.cart_item_box h1, .cart_items_space h1  {
+    color:var(--white);
+    text-align: center;
+
+}
+
+.cart_items_space {
+    width: 100%;
+    position: relative;
+    top:15vh;
+    height: auto;
+    padding-bottom: 5vh;
+}
+
+.cart_item_box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    height: 20vh;
+    justify-content: space-around;
+
+}
+
+.cart_item_box p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.cart_item_box h1 {
+    font-size:1.1em;
+}
+
+.cart_item_box img {
+    
+    width: 60%;
+    height: 60%;
+}
+
+.image_cart_div{
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    align-items:center;
+    
+}
+
+.cart_info_div {
+    width: 45%;
+    flex-direction: column;
+    align-self: center;
+}
+
+.cart_info_div p {
+    margin-top:1em;
+    color: var(--red);
+    font-weight: bold;
+}
+
+.checkout_box {
+    width: 80%;
+    height: 15vh;
+    background-color: #171717;
+    padding: 5%;
+    margin:0 auto;
+}
+.qty_selector {
+    margin-top:0.5rem;
+    display: flex;
+    justify-content:space-around
+}
+
+.qty_selector button {
+    width: 20%;
+    background-color: var(--soft-black);
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.qty_selector input {
+  width: 10%;
+  background-color: var(--soft-black);
+  border: none;
+  color:var(--red);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .image_cart_div img {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .image_cart_div img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .checkout_box {
+        margin-top: 5%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .image_cart_div img {
+        width: 60%;
+        height: 85%;
+    }
+
+    .cart_info_div h1, .cart_info_div p {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .image_cart_div img {
+        width: 25%;
+    }
+}

@@ -29,7 +29,7 @@
     margin:0 auto;
     text-align: center;
     font-size:  3rem;
-    color:#DAE1E7;
+    color:var(--white);
     position: relative;
     top:3rem;
     
@@ -52,7 +52,7 @@
     padding:0.7em;
     align-self: center;
     justify-content: center;
-    background-color:#0e1111;
+    background-color:var(--black);
     color:#DAE1E7;
     font-size: 1rem;
     font-weight: bolder;
@@ -61,7 +61,7 @@
 
 .link_routes a:hover {
     transition:0.4s;
-    background-color: #BF4D4C;
+    background-color: var(--red);
 }
 
 .link_routes a:visited, a:link {
@@ -70,7 +70,7 @@
 
 .instagram {
  margin-left: 10px;    
- color: #BF4D4C;
+ color: var(--red)
 }
 
 

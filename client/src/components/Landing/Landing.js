@@ -5,9 +5,8 @@ import {GrInstagram}  from 'react-icons/gr'
 
 const Landing = () => {
     let  index = 0;
+    
     const changeSliderIndex = () => {
-
-     
         if(index < imagenes.length - 1){
             index++;
         }
@@ -23,6 +22,7 @@ const Landing = () => {
     useEffect(() => {
     
         setInterval(changeSliderIndex, 3000)
+        
       
     },[changeSliderIndex])
 
@@ -31,10 +31,10 @@ const Landing = () => {
     return (
         <>
       <div className='routes'>
-         <h1 >My best photos. On frames.</h1>
+         <h1>Mis mejores fotos. En cuadros.</h1>
          <div className="link_routes">
-         <a href="#main"> See catalogue </a>
-         <a href="http://www.instagram.com/sofakma" > Check my Instagram <GrInstagram className='instagram' /></a>  
+         <a href="#main"> Ver catálogo </a>
+         <a href="http://www.instagram.com/sofakma" > Visita mi Instagram! <GrInstagram className='instagram' /></a>  
          </div>
        
       </div>  
