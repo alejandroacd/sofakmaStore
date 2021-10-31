@@ -1,4 +1,4 @@
-import React, {useContext, createContext} from "react";
+import React, {useContext, useState, createContext} from "react";
 
 
 const CartContext = createContext();
@@ -10,10 +10,21 @@ export const useCart = () => {
 export const CartProvider = ({children}) => {
 
    let cart = JSON.parse(localStorage.getItem('cart')) || [];
- 
+   const [totalCheckout, setTotalCheckout] = useState(cart.length > 0 ? cart
+    .map(x => x.price * x.qty)
+    .reduce((x,y) => x + y )
+    : 0)
 
 
     // cart controllers
+    
+
+    const totalPrice = () => {
+        return setTotalCheckout(cart.length > 0 ? cart
+            .map(x => x.price * x.qty)
+            .reduce((x,y) => x + y )
+            : 0)
+       }
     
     
     //Añadir al carrito
@@ -46,7 +57,6 @@ export const CartProvider = ({children}) => {
 
          
      })
-
      cart[index].qty = cart[index].qty + 1
      localStorage.setItem('cart',JSON.stringify(cart))
     }
@@ -61,11 +71,13 @@ const qtyMinus = (item) => {
       
     })
 
-
     cart[index].qty = cart[index].qty - 1
     localStorage.setItem('cart',JSON.stringify(cart))
    }
    
+
+   // Cálculo del TotalCheckout 
+
 
 
     const removeFromCart = (id) => {
@@ -89,8 +101,10 @@ const qtyMinus = (item) => {
         resetCart,
         cart,
         qtyPlus,
-        qtyMinus
-      
+        qtyMinus,
+        totalPrice,
+        totalCheckout
+
      
     }
 

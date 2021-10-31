@@ -1,3 +1,4 @@
+
 .cart_item_box h1, .cart_items_space h1  {
     color:var(--white);
     text-align: center;
@@ -5,64 +6,56 @@
 }
 
 .cart_items_space {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     position: relative;
-    top:15vh;
+    top:20vh;
     height: auto;
-    padding-bottom: 5vh;
 }
 
 .cart_item_box {
     display: flex;
     flex-direction: row;
-    margin-top: 2em;
+    margin-bottom: 2em;
     height: 20vh;
     justify-content: space-around;
-
 }
 
 .cart_item_box p {
+    
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .cart_item_box h1 {
-    font-size:1.1em;
+    font-size:1em;
 }
 
 .cart_item_box img {
-    
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
 }
 
-.image_cart_div{
+.image_cart_div {
     justify-content: center;
     width: 50%;
     display: flex;
     align-items:center;
-    
 }
 
 .cart_info_div {
-    width: 45%;
+    width: 50%;
     flex-direction: column;
     align-self: center;
 }
 
 .cart_info_div p {
-    margin-top:1em;
+    margin-top:0.5em;
     color: var(--red);
     font-weight: bold;
 }
 
-.checkout_box {
-    width: 80%;
-    height: 15vh;
-    background-color: #171717;
-    padding: 5%;
-    margin:0 auto;
-}
+
 .qty_selector {
     margin-top:0.5rem;
     display: flex;
@@ -77,6 +70,8 @@
     color: var(--red);
     font-weight: bold;
     font-size: 1em;
+    cursor: pointer;
+
 }
 
 
@@ -88,15 +83,31 @@
   font-weight: bold;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.checkout_box {
+    color: var(--white);
+    width: 100%;
+    margin: 0 auto;
+    padding:1.3em;
+
+}
+
 @media only screen and (min-width: 768px) {
 
+    .cart_info_div p, .cart_info_div h1 {
+        font-size: 1.3rem;
+    }
     .image_cart_div img {
-        width: 50%;
+        width: 40%;
     }
 }
 
 
 @media only screen and (min-width: 992px) {
+
 
     .image_cart_div img {
         width: 50%;
@@ -107,18 +118,25 @@
         margin-top: 5%;
     }
 
+   
 
 }
 
 @media only screen and (min-width: 1024px){
 
     .image_cart_div img {
-        width: 60%;
+        width: 40%;
         height: 85%;
     }
 
     .cart_info_div h1, .cart_info_div p {
-        font-size: 2em;
+        font-size: 1.4em;
+    }
+    
+      .qty_selector { 
+        width: 50%;
+        margin: 0 auto;
+     
     }
 }
 

@@ -55,7 +55,7 @@ const ProductScreen = (props) => {
                 <div className='description__div2'>
 
                     <p className='description_title' onClick={downDescription}>  < GoTriangleRight className={descriptionToggle ? 'rotate triangle_right' : 'triangle_right'} size={18} />Ver descripción</p>
-                    <p className={descriptionToggle ? ' show description_text' : ' hide description_text'}> tamaño: 15x15</p>
+                    
                     <p className={descriptionToggle ? ' show description_text' : ' hide description_text'}> {productDetails.description} </p>
                 </div>
             </div>

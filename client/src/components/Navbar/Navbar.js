@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="navbar_container">
             <header className="header-container">
                 <div className='logo_container' onClick={redirect}>
-                    <GiSofa size={30} className="logo"/>
+                    <GiSofa size={29} className="logo"/>
                     <h1 className="logo-title">sofakma<p className="yellow">store</p></h1>
                 </div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </ul>
                 </div>
                 <div className="menu-cart">
-                <IoCartOutline size={35} className='cart-icon' />
+                <IoCartOutline size={30} className='cart-icon' />
                 <FiMenu className='menu-burger' size={35} onClick={changeState} />
                 </div>
             </header>

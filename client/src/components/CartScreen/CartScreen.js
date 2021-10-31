@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar  from '../Navbar/Navbar';
 import '../CartScreen/CartScreen.css'
 import  CartItem from '../CartScreen/CartItem'
@@ -8,16 +8,9 @@ import CheckoutBox from './CartBox';
 
 const Cart = () => {
 
+    const { cart,totalCheckout} = useCart();
+  
 
-    
-    const { cart } = useCart();
-    
-    let totalCheckout = cart.length > 0 ? cart
-    .map(x => x.price)
-    .reduce((x,y) => x + y )
-    : 0
-
-    console.log(cart)
 
     return (
         <>  
@@ -30,11 +23,11 @@ const Cart = () => {
             <CartItem index={cart.indexOf(x)} key={x.id} id={x.id} name={x.name} image={x.image} price={x.price} qty={x.qty} />
             )
         })}
-               <CheckoutBox total={totalCheckout} />
+            
+
+            <CheckoutBox total={totalCheckout} />
         
         </div>
-
- 
        
         </>
     )

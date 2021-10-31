@@ -5,16 +5,16 @@
 }
 
 .product_box {
+   
     display:flex;
     flex-direction: column;
-    padding: 0.3rem;
+    padding: 1rem;
     min-width: 75%;
     margin: 1.5em;
-    color:#DAE1E7;
+    color:var(--white);
     background-color:var(--soft-black);
     transition: 0.2s;
-    border-radius: 5%;
-
+    border-radius: 5px;
 }
 
 .product_box h1 {
@@ -38,7 +38,6 @@
 }
  .information img {
     max-width: 85%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -48,7 +47,7 @@
     display: flex;
     font-size:1.5rem;
     align-self: center;
-    color: #BD4B4B;
+    color: var(--red);
     font-weight: bolder;
     font-size:2rem;
 }
@@ -64,13 +63,12 @@
     justify-content: space-between;
 }
 
-
-
 .buy_section button {
     font-size: 1rem;
     padding:10px;
-    color:#DAE1E7;
-    background-color:#151515;
+    color:var(--white);
+    font-weight:400;
+    background-color:var(--black);
     border: 0.5px solid #BD4B4B;
     width: 100%;
     margin-bottom: 0.5em;
@@ -78,8 +76,12 @@
 }
 
 @media (min-width: 992px){
+ 
+
     img {
         width: 50%;
+        height: 90%;
+        align-self: center;
     }
    .information {
        flex-direction: column
@@ -88,6 +90,7 @@
        flex-direction: row;
        font-size: 1.5rem;
        padding:2rem;
+       width: 85%;
    }
 
    .product_container {
@@ -99,16 +102,14 @@
    .buy_section {
        flex-direction:column;
        margin-top:5rem;
-       justify-content: space-around;
+    
    }
-
-   
    .buy_section p {
        font-size:2rem
    }
    .buy_section button {
        font-size: 1.5rem;
-       padding:15px;
+       padding: 15px;
        width: 70%;
        margin: 0 auto 1rem;
    }
