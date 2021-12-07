@@ -5,7 +5,6 @@
 }
 
 .product_box {
-   
     display:flex;
     flex-direction: column;
     padding: 1rem;
@@ -18,7 +17,6 @@
 }
 
 .product_box h1 {
-
    font-size: 1em;
    height: 3em;
 }
@@ -73,10 +71,36 @@
     width: 100%;
     margin-bottom: 0.5em;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.cartbutton {
+   margin-left: 0.2rem;
+}
+
+.product_container h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.product_container .mercadopago_image {
+width: 10%;
+position: relative;
+left: 45%;
+
+}
+
+
+
 @media (min-width: 992px){
- 
+    .product_container .mercadopago_image {
+      left:0;
+      width: 5%;
+      
+    }
 
     img {
         width: 50%;
@@ -84,20 +108,23 @@
         align-self: center;
     }
    .information {
-       flex-direction: column
+       flex-direction: column;
    }
    .product_box {
        flex-direction: row;
        font-size: 1.5rem;
        padding:2rem;
-       width: 85%;
+       width: 50%;
+       height: 30%;
    }
+
 
    .product_container {
        width: 80%;
        display:flex;
        flex-direction: column;
        align-self: center;
+      
    }
    .buy_section {
        flex-direction:column;
@@ -112,6 +139,7 @@
        padding: 15px;
        width: 70%;
        margin: 0 auto 1rem;
+      
    }
    .buy_section button:hover {
        background-color:#BD4B4B;

@@ -1,7 +1,7 @@
 .main {
     height: auto;
-    background-color: var(--black)
-    
+    background-color: var(--black);
+   
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 
-.main .main_title{
+ .main_title{
     display: flex;
     color:var(--white);
     text-align:center;
@@ -20,3 +20,4 @@ html {
     font-size: 2.5em;
 
 }
+

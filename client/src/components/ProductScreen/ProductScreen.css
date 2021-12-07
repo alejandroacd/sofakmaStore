@@ -5,6 +5,8 @@ top: 17vh;
 width: 95%;
 margin: 0 auto;
 flex-direction: column;
+animation-name:fadein;
+animation-duration:0.5s
 }
 
 .product_square h1 {

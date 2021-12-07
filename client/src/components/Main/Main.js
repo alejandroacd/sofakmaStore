@@ -16,9 +16,10 @@ const [datax,setData] = useState([])
     },[])
 
     return (
-        <div className='main'  id="main">
 
-            <h1 className="main_title" > Catalogo </h1>
+<>
+        <h1 className="main_title" > Catalogo </h1>
+        <div className='main'  id="main">
         
         {datax.map((x,y) => {
            return ( 
@@ -28,6 +29,7 @@ const [datax,setData] = useState([])
         })}
 
         </div>
+        </>
     )
 }
 

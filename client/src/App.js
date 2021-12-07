@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ProductScreen from './components/ProductScreen/ProductScreen'
 import Cart from './components/CartScreen/CartScreen'
 import { CartProvider} from './CartContext/cartContext'
+import Faq from './components/FAQ/Faq'
+
 
 function App() {
 
@@ -25,6 +27,7 @@ function App() {
               <Route exact path="/products/:id" component={ProductScreen} />
               <Route exact path="/catalogue" component={Catalogue} />
               <Route exact path="/Cart" component={Cart} />
+              <Route exact path="/Faq" component={Faq} />
             </Switch>
           
             </div>

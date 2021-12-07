@@ -1,0 +1,36 @@
+.faq-container {
+    display:flex;
+    width: 85%;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+    top:15vh;
+    color:var(--white);
+    flex-direction: column;
+}
+
+.faq-container h1 {
+    color:var(--white);
+    text-align: center;
+    padding:0.5em;
+    width: 100%;
+}
+
+.faq-container p {
+    text-align: center;
+   
+}
+
+.faq_question {
+    font-weight: bolder;
+    padding-bottom: 0.5em;
+    margin:0 auto;
+}
+
+.faq_answer {
+    padding-bottom:1em;
+}
+
+.store {
+    color:var(--red);
+}
