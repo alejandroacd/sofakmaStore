@@ -5,7 +5,6 @@ import { GoTriangleRight } from 'react-icons/go';
 import { IoCaretBackOutline } from 'react-icons/io5'
 import { IoCartOutline } from 'react-icons/io5'
 import { useCart } from '../../CartContext/cartContext'
-import Axios from 'axios'
 import axios from 'axios';
 
 const ProductItem = (props) => {
@@ -18,7 +17,7 @@ const ProductItem = (props) => {
 
 
     const [descriptionToggle, setDescriptionToggle] = useState(false)
-    const { addToCart, loadin } = useCart();
+    const { addToCart, loadin, loading } = useCart();
    
    
     const downDescription = () => {
@@ -26,6 +25,7 @@ const ProductItem = (props) => {
     }
 
     const buyProduct = () => {
+        loadin();
         axios.post('http://localhost:3001/checkout',[actualProduct])
         .then(() => console.log(actualProduct))
         .catch((err) => {
@@ -38,8 +38,15 @@ const ProductItem = (props) => {
 
     return (
         <>
-        <div className='product_square' >
-                <div className='location'>
+
+         <div className='product_square' >
+            { loading ? <div className="load-3">
+         
+        
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>    
+       </div>  : <> <div className='location'>
                     <Link to='/catalogue'> <IoCaretBackOutline size={20} className='go_back' />
                         <p> Atrás </p>
                     </Link>
@@ -66,8 +73,10 @@ const ProductItem = (props) => {
                     />Ver descripción</p>
 
                     <p className={descriptionToggle ? ' show description_text' : ' hide description_text'}> {props.description} </p>
-                </div>
+                </div> 
+                </> }
             </div>
+     
         </>
     )
 }

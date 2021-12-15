@@ -17,12 +17,7 @@ const mongoose = require('mongoose')
      imgUrl: {
         type: String,
         required: false
-    },
-     countInStock: {
-         type: Number,
-         required: true
-     },
- 
+    }
  })
 
  const Product = mongoose.model('product', productSchema)

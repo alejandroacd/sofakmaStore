@@ -6,7 +6,8 @@ width: 95%;
 margin: 0 auto;
 flex-direction: column;
 animation-name:fadein;
-animation-duration:0.5s
+animation-duration:0.5s;
+
 }
 
 .product_square h1 {
@@ -125,6 +126,8 @@ animation-duration:0.5s
      display: flex;
      font-weight: bold;
  }
+
+ 
 
 
 

@@ -4,26 +4,49 @@ const products = [
        
         name: "The Blue Hole",
         description: "Taken in: Piriápolis, Uruguay. El material de este cuadro es de madera natural y la parte posterior de vidrio.",
-        price: 950,
+        price: 1200,
         imgUrl: '/images/soph1.jpg',
-        countInStock: 10,
     }, 
      {
         
         name: "Looking Forward",
         description: "Taken in: Montevideo, Uruguay. El material de este cuadro es de madera natural y la parte posterior de vidrio.",
-        price: 950,
+        price: 1200,
         imgUrl: '/images/soph2.jpg',
-        countInStock: 10,
+        
     },  
     {
       
         name: "Greeny and Sunny",
         description: "Foto tomada en: Montevideo, Uruguay. El material de este cuadro es de madera natural y la parte posterior de vidrio.",
-        price: 1800,
+        price: 1200,
         imgUrl: '/images/soph3.jpg',
-        countInStock: 10,
+        
+    },
+    {
+      
+        name: "Non oriented",
+        description: "Foto tomada en: Montevideo, Uruguay. El material de este cuadro es de madera natural y la parte posterior de vidrio.",
+        price: 1200,
+        imgUrl: '/images/soph4.jpg',
+        
+    },
+    {
+      
+        name: "Just a Day",
+        description: "Foto tomada en: Montevideo, Uruguay. El material de este cuadro es de madera natural y la parte posterior de vidrio.",
+        price: 1200,
+        imgUrl: '/images/soph5.jpg',
+        
+    },
+    {
+        name: "Mauer",
+        description: "Mauer. Buenos Aires. El material de este cuadro es de madera natural y la parte posterior de vidrio.",
+        price: 1500,
+        imgUrl: '/images/soph6.jpg',
+    
     }
+    
 ]
 
 module.exports = products
