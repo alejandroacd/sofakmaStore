@@ -9,7 +9,7 @@ const Main = () => {
 const [datax,setData] = useState([])
 
         useEffect(() => {
-        axios.get('http://localhost:3001/api/products')
+        axios.get('https://sofakma-store.herokuapp.com/api/products')
         .then((res) => { 
             setData(res.data)
         })

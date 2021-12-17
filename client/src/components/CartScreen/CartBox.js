@@ -13,7 +13,7 @@ const CheckoutBox = (props) => {
   
     const enviarData = () => {
        loadin()
-        axios.post('http://localhost:3001/checkout', 
+        axios.post('https://sofakma-store.herokuapp.com/checkout', 
             [...cart])  
             .then(function (response) {
                 console.log(response)
@@ -22,7 +22,7 @@ const CheckoutBox = (props) => {
               .catch(function (error) {
                 console.log(error);
               });
-              window.location = "http://localhost:3001/checkout"
+              window.location = "https://sofakma-store.herokuapp.com/checkout"
 
     }
     return (    
