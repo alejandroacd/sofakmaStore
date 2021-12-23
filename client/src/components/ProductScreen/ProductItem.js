@@ -26,13 +26,13 @@ const ProductItem = (props) => {
 
     const buyProduct = () => {
         loadin();
-        axios.post('http://localhost:3001/checkout',[actualProduct])
+        axios.post('https://sofakma-store.herokuapp.com/checkout',[actualProduct])
         .then(() => console.log(actualProduct))
         .catch((err) => {
             console.log(err)
         })
 
-        window.location = "http://localhost:3001/checkout"
+        window.location = "https://sofakma-store.herokuapp.com/checkout"
     }
 
 

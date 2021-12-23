@@ -11,9 +11,18 @@
     min-width: 75%;
     margin: 1.5em;
     color:var(--white);
-    background-color:var(--soft-black);
+   
     transition: 0.2s;
     border-radius: 5px;
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(78, 62, 62, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(78, 62, 62, 0.3);
+
 }
 
 .product_box h1 {
