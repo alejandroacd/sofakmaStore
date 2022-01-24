@@ -1,6 +1,6 @@
 # ✨ sofakmaStore ✨
 
-SofakmaStore es un modelo de e-commerce que contiene las funcionalidades básicas que un comercio digital debería tener.
+SofakmaStore is an e-commerce model that contains the basic functionalities that a digital store should have.
 
 # technologies 📃
 
