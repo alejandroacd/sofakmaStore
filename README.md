@@ -1,6 +1,8 @@
 # ✨ sofakmaStore ✨
 
-SofakmaStore is an e-commerce model that contains the basic functionalities that a digital store should have.
+SofakmaStore is an e-commerce model that contains the basic functionalities that a digital store should have. This project is made with the purpose of practicing concepts,
+more specifically state handling in React.
+
 
 # technologies 📃
 
