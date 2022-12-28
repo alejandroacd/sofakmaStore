@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import axios from 'axios';
 import { useCart } from '../../CartContext/cartContext'
 
@@ -13,7 +13,7 @@ const CheckoutBox = (props) => {
   
     const enviarData = () => {
        loadin()
-        axios.post('https://sofakma-store.herokuapp.com/checkout', 
+        axios.post('https://sofakmastore-production.up.railway.app/checkout', 
             [...cart])  
             .then(function (response) {
                 console.log(response)
@@ -22,7 +22,7 @@ const CheckoutBox = (props) => {
               .catch(function (error) {
                 console.log(error);
               });
-              window.location = "https://sofakma-store.herokuapp.com/checkout"
+              window.location = "https://sofakmastore-production.up.railway.app/checkout"
 
     }
     return (    

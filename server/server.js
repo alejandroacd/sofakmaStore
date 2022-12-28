@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 
 
 app.post('/checkout', cors(), (req,res) => {
-
+  
   //  Mercadopago Config
 let preference = {
   items: req.body.map(x => ({
