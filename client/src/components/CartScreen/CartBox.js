@@ -13,7 +13,7 @@ const CheckoutBox = (props) => {
   
     const enviarData = () => {
        loadin()
-        axios.post('https://sofakmastore-production.up.railway.app/checkout', 
+        axios.post('https://sofakma-store.onrender.com/checkout', 
             [...cart])  
             .then(function (response) {
                 console.log(response)
@@ -22,7 +22,7 @@ const CheckoutBox = (props) => {
               .catch(function (error) {
                 console.log(error);
               });
-              window.location = "https://sofakmastore-production.up.railway.app/checkout"
+              window.location = "https://sofakma-store.onrender.com/checkout"
 
     }
     return (    

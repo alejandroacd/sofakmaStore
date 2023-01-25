@@ -9,7 +9,7 @@ const Main = () => {
 const [datax,setData] = useState([])
 
         useEffect(() => {
-        axios.get('https://sofakmastore-production.up.railway.app/api/products')
+        axios.get('https://sofakma-store.onrender.com/api/products')
         .then((res) => { 
             setData(res.data)
         })

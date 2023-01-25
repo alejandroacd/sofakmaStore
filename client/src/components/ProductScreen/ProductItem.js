@@ -26,13 +26,13 @@ const ProductItem = (props) => {
 
     const buyProduct = () => {
         loadin();
-        axios.post('https://sofakmastore-production.up.railway.app/checkout',[actualProduct])
+        axios.post('https://sofakma-store.onrender.com/checkout',[actualProduct])
         .then(() => console.log(actualProduct))
         .catch((err) => {
             console.log(err)
         })
 
-        window.location = "https://sofakmastore-production.up.railway.app/checkout"
+        window.location = "https://sofakma-store.onrender.com/checkout"
     }
 
 
